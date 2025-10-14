@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Offline - MN Appliance Repairs</title>
+    <style>
+        body { font-family: Arial, sans-serif; text-align: center; padding: 50px; }
+        .offline-content { max-width: 600px; margin: 0 auto; }
+        .btn { background: #015192; color: white; padding: 1rem 2rem; text-decoration: none; border-radius: 5px; }
+    </style>
+</head>
+<body>
+    <div class="offline-content">
+        <h1>You're Offline</h1>
+        <p>No internet connection. But you can still call us for appliance repair!</p>
+        <a href="tel:+27840795152" class="btn">Call 084 079 5152</a>
+        <p><small>This page will refresh automatically when connection returns.</small></p>
+    </div>
+    <script>
+        window.addEventListener('online', function() {
+            window.location.reload();
+        });
+    </script>
+</body>
+</html>
